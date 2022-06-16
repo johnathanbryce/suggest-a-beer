@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=League+Gothic&family=Open+Sans:wght@300;400&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 100% would be 16 px so now, 1 rem = 10px */
+
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  background-color: beige;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  border-style: none;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+small {
+  font-size: 80%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* TYPOGRAPHY */
+
+h2 {
+  font-size: 4rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  p {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    margin-top: 0;
+    display: flex;
+
+    justify-content: center;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+}
